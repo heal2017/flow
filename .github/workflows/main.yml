@@ -6,6 +6,7 @@ jobs:
     steps:
       - run: df -h
       - run: lsblk
+      - run: ip addr
   job2:
     runs-on: windows-latest
     steps:
