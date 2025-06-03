@@ -4,8 +4,8 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-      - run: ls
+      - run: df -h
+      - run: lsblk
   job2:
     runs-on: windows-latest
     steps:
