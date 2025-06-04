@@ -15,5 +15,5 @@ jobs:
           src: github/heal2017
           dst: gitee/heal2017
           dst_key: ${{ secrets.GITEE_KEY }}
-          dst_token: ${{ secrets.GITEE_TOKEN }}
+          dst_token: ${{ secrets.GITEE_KEY }}
           account_type: user
