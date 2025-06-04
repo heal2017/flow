@@ -24,4 +24,3 @@ jobs:
           force_update: true
           static_list: true
           timeout: 600
-          config_files: repos.conf
