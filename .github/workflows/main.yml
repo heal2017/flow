@@ -9,18 +9,11 @@ jobs:
   mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
-      
-      - name: Sync Github To Gitee
+      - name: Mirror the Github User repos to Gitee.
         uses: Yikun/hub-mirror-action@master
         with:
-          src: github
-          dst: gitee
+          src: github/heal2017
+          dst: gitee/heal2017
           dst_key: ${{ secrets.GITEE_TOKEN }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
           account_type: user
-          clone_style: https
-          force_update: true
-          static_list: true
-          timeout: 600
