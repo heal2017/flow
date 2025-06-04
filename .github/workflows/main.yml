@@ -20,7 +20,7 @@ jobs:
           dst_key: ${{ secrets.GITEE_TOKEN }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
           account_type: user
-          clone_type: https
+          clone_style: https
           force_update: true
           static_list: true
           timeout: 600
