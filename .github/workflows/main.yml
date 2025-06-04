@@ -17,3 +17,4 @@ jobs:
           dst_key: ${{ secrets.GITEE_KEY }}
           dst_token: ${{ secrets.GITEE_KEY }}
           account_type: user
+          clone_style: https
