@@ -1,13 +1,27 @@
-on: push
+name: Sync Github To Gitee
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
 
 jobs:
-  job1:
+  mirror:
     runs-on: ubuntu-latest
     steps:
-      - run: df -h
-      - run: lsblk
-      - run: ip addr
-  job2:
-    runs-on: windows-latest
-    steps:
-      - run: node --version
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      
+      - name: Sync Github To Gitee
+        uses: Yikun/hub-mirror-action@v1.6
+        with:
+          src: github
+          dst: gitee
+          dst_key: ${{ secrets.GITEE_TOKEN }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          account_type: user
+          clone_type: https
+          force_update: true
+          static_list: true
+          timeout: 600
+          config_files: repos.conf
