@@ -14,7 +14,6 @@ jobs:
         with:
           src: github/heal2017
           dst: gitee/heal2017
-          dst_key: ${{ secrets.GITEE_KEY }}
-          dst_token: ${{ secrets.GITEE_KEY }}
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
           account_type: user
-          clone_style: https
