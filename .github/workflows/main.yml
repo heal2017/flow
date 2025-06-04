@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Sync Github To Gitee
-        uses: Yikun/hub-mirror-action@v1.6
+        uses: Yikun/hub-mirror-action@master
         with:
           src: github
           dst: gitee
