@@ -19,6 +19,4 @@ jobs:
           account_type: user
           force_update: true
           debug: true
-          white_list: |
-            "heal2017"
-            "mihomo"
+          white_list: "heal2017,mihomo"
