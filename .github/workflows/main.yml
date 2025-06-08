@@ -19,4 +19,5 @@ jobs:
           account_type: user
           force_update: true
           debug: true
-          # white_list: "heal2017,mihomo"
+          static_list: 'incam,secrets'
+          dst_visibility: 'private'
