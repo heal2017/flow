@@ -21,4 +21,3 @@ jobs:
           debug: true
           clone_style: ssh
           static_list: 'incam,secrets'
-          dst_visibility: 'private'
